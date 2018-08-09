@@ -1,5 +1,171 @@
-$primary-color: #444;
+@import "config";
+@import "menu";
+
+* {
+  box-sizing: border-box;
+}
 
 body {
+  @include backgroud;
   background: $primary-color;
+  color: set-text-color($primary-color);
+  height: 100%;
+  margin: 0;
+  font-family: Helvetica, Tahoma, Arial, "Heiti SC", "Microsoft YaHei",
+    "WenQuanYi Micro Hei";
+  line-height: 1.5;
 }
+table {
+  padding: 0.5rem 1.5rem;
+  width: 85%;
+  text-align: left;
+  margin-bottom: 2rem;
+  border-spacing: 0 0.5em;
+}
+.section {
+  background: rgba(lighten($primary-color, 2), 0.3);
+}
+
+td {
+  text-align: justify;
+  vertical-align: super;
+}
+tr:nth-child(even) {
+  color: #bbb;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+
+  &.lg-heading {
+    font-size: 6rem;
+  }
+  &.md-heading {
+    font-size: 4rem;
+  }
+  &.sm-heading {
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 2), 0.5);
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+main {
+  padding: 4rem;
+  // height: 100%;
+  min-height: calc(100vh - 60px);
+
+  .icons {
+    margin-top: 1rem;
+    a {
+      padding: 0.4rem;
+
+      &:hover {
+        color: $secondary-color;
+        @include easeOut();
+      }
+    }
+  }
+
+  &#home {
+    overflow: hidden;
+    h1 {
+      margin-top: 10vh;
+    }
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7rem;
+  .item {
+    margin: 0.7rem 1rem;
+    .intro {
+      border-bottom: solid 2px darken($secondary-color, 10);
+      padding: 0.5rem 1rem;
+      height: 200px;
+      background-color: lighten($primary-color, 10);
+    }
+    .project-name {
+      color: $secondary-color;
+      font-size: 25px;
+    }
+    .project-intro {
+      font-size: 16px;
+      margin-left: 1rem;
+      margin-right: 0;
+      margin-top: 0.5rem;
+    }
+    .div-inline {
+      align-items: center;
+    }
+  }
+  .btn {
+    display: block;
+    background-color: darken($primary-color, 20);
+    text-align: center;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+    &.inline {
+      display: inline-block;
+      width: 49%;
+      // display: flex;
+      // justify-content: space-evenly;
+      // align-content: flex-end;
+    }
+    &.light {
+      background-color: lighten($primary-color, 20);
+    }
+  }
+}
+
+.boxes {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .contact {
+    font-size: 20px;
+
+    padding: 1rem 3rem;
+    align-items: center;
+    width: fit-content;
+    border: solid 3px #fff;
+    margin: 2rem 1.5rem;
+    span {
+      color: $secondary-color;
+    }
+    .hidden {
+      visibility: hidden;
+    }
+  }
+}
+
+.footer {
+  background-color: #333;
+  height: 60px;
+  padding: 20px 0 20px 60px;
+  font-size: 15px;
+  .nav {
+    margin: 0 1rem;
+  }
+}
+
+@import "mobile";
