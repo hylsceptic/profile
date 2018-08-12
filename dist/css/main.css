@@ -152,7 +152,8 @@ h3 {
   h2.sm-heading,
   h3.sm-heading {
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    border-bottom: #eece1a solid 2px;
+    background: #494949; }
 
 a {
   color: #fff;
@@ -193,13 +194,15 @@ main {
       height: 200px;
       background-color: #5e5e5e; }
     .projects .item .project-name {
+      text-align: left;
       color: #eece1a;
       font-size: 25px; }
     .projects .item .project-intro {
-      font-size: 16px;
+      font-size: 14px;
       margin-left: 1rem;
       margin-right: 0;
-      margin-top: 0.5rem; }
+      margin-top: 0.5rem;
+      text-align: justify; }
     .projects .item .div-inline {
       align-items: center; }
   .projects .btn {
@@ -231,10 +234,11 @@ main {
       visibility: hidden; }
 
 .footer {
+  text-align: center;
   background-color: #333;
   height: 60px;
-  padding: 20px 0 20px 60px;
-  font-size: 15px; }
+  padding: 15px 0;
+  font-size: 20px; }
   .footer .nav {
     margin: 0 1rem; }
 
@@ -286,25 +290,31 @@ main {
 @media screen and (max-width: 660px) {
   .projects {
     grid-template-columns: repeat(1, 1fr); }
+    .projects .item .intro {
+      height: 150px; }
+    .projects .item .project-name {
+      font-size: 20px; }
+    .projects .item .project-intro {
+      font-size: 13px; }
   main#home h1 {
-    margin-top: 10vh; }
+    margin-top: 20vh; }
   main {
     padding: 2rem;
     align-content: center;
     text-align: center; }
     main .lg-heading {
-      font-size: 2rem;
+      font-size: 2.3rem;
       line-height: 1;
-      margin-bottom: 1rem; }
+      margin-bottom: 2rem;
+      line-height: 3rem; }
     main .md-heading {
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      text-align: left; }
     main .sm-heading {
       font-size: 1rem; }
-  .footer {
-    padding-left: 15px; }
-    .footer .nav {
-      margin: 0 0.5rem;
-      font-size: 13px; }
+  .footer .nav {
+    margin: 0 0.5rem;
+    font-size: 15px; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -324,12 +334,15 @@ main {
     height: 35vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      width: 150px;
-      height: 200px;
+      width: 132px;
+      height: 176px;
       background: url(../img/fig1.png);
       background-size: cover; }
   table {
     width: 100%; }
+    table td.label {
+      color: #f2d849;
+      width: 18%; }
   .menu-nav {
     height: 65vh;
     transform: translate3d(-100%, 0, 0);
@@ -338,5 +351,6 @@ main {
     font-size: 11px; }
   .boxes .contact {
     font-size: 15px;
-    padding: 1rem 1.5rem;
-    margin: 1rem 1rem; } }
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    margin: 0.7rem 0.5rem; } }

@@ -48,7 +48,8 @@ h3 {
   }
   &.sm-heading {
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
+    border-bottom: $secondary-color solid 2px;
+    background: rgba(lighten($primary-color, 2), 2);
   }
 }
 
@@ -105,14 +106,16 @@ main {
       background-color: lighten($primary-color, 10);
     }
     .project-name {
+      text-align: left;
       color: $secondary-color;
       font-size: 25px;
     }
     .project-intro {
-      font-size: 16px;
+      font-size: 14px;
       margin-left: 1rem;
       margin-right: 0;
       margin-top: 0.5rem;
+      text-align: justify;
     }
     .div-inline {
       align-items: center;
@@ -160,10 +163,11 @@ main {
 }
 
 .footer {
+  text-align: center;
   background-color: #333;
   height: 60px;
-  padding: 20px 0 20px 60px;
-  font-size: 15px;
+  padding: 15px 0;
+  font-size: 20px;
   .nav {
     margin: 0 1rem;
   }
