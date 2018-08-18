@@ -16,11 +16,14 @@ body {
   line-height: 1.5;
 }
 table {
-  padding: 0.5rem 1.5rem;
-  width: 85%;
+  padding: 0.5rem 2.5rem;
+  width: 100%;
   text-align: left;
   margin-bottom: 2rem;
   border-spacing: 0 0.5em;
+  td.label {
+    color: lighten($secondary-color, 10);
+  }
 }
 .section {
   margin-top: 2rem;
@@ -47,6 +50,7 @@ h3 {
     font-size: 4rem;
   }
   &.sm-heading {
+    font-size: 2.3rem;
     padding: 0.2rem 1rem;
     border-bottom: $secondary-color solid 2px;
     background: rgba(lighten($primary-color, 2), 2);

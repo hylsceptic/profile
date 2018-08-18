@@ -1,4 +1,9 @@
 @include mediaXl {
+  main {
+    // width: 1201px;
+    margin-left: calc(50vw - 600px);
+    margin-right: calc(50vw - 600px);
+  }
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -138,6 +143,7 @@
 
   table {
     width: 100%;
+    padding: 0.5rem 1.5rem;
     td.label {
       color: lighten($secondary-color, 10);
       width: 18%;

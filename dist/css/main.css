@@ -118,11 +118,13 @@ body {
       z-index: -1; }
 
 table {
-  padding: 0.5rem 1.5rem;
-  width: 85%;
+  padding: 0.5rem 2.5rem;
+  width: 100%;
   text-align: left;
   margin-bottom: 2rem;
   border-spacing: 0 0.5em; }
+  table td.label {
+    color: #f2d849; }
 
 .section {
   margin-top: 2rem;
@@ -151,6 +153,7 @@ h3 {
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
+    font-size: 2.3rem;
     padding: 0.2rem 1rem;
     border-bottom: #eece1a solid 2px;
     background: #494949; }
@@ -243,6 +246,9 @@ main {
     margin: 0 1rem; }
 
 @media screen and (min-width: 1201px) {
+  main {
+    margin-left: calc(50vw - 600px);
+    margin-right: calc(50vw - 600px); }
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
 
@@ -339,7 +345,8 @@ main {
       background: url(../img/fig1.png);
       background-size: cover; }
   table {
-    width: 100%; }
+    width: 100%;
+    padding: 0.5rem 1.5rem; }
     table td.label {
       color: #f2d849;
       width: 18%; }
