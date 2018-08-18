@@ -24,7 +24,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.97;
+  opacity: 0.98;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -54,7 +54,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 350px;
-      background: url(../img/fig1.png);
+      background: url(../img/fig1.jpg);
       background-size: cover;
       border-radius: 50%;
       border: solid 3px #eece1a; }
@@ -286,7 +286,7 @@ main {
     .menu-branding .portrait {
       width: 150px;
       height: 200px;
-      background: url(../img/fig1.png);
+      background: url(../img/fig1.jpg);
       background-size: cover; }
   .menu-nav {
     height: 65vh;
@@ -342,7 +342,7 @@ main {
     .menu-branding .portrait {
       width: 132px;
       height: 176px;
-      background: url(../img/fig1.png);
+      background: url(../img/fig1.jpg);
       background-size: cover; }
   table {
     width: 100%;
